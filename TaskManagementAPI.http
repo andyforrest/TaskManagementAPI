@@ -1,0 +1,10 @@
+﻿@TaskManagementAPI_HostAddress = https://localhost:7201
+
+POST {{TaskManagementAPI_HostAddress}}/api/taskitems
+Content-Type: application/json
+
+{
+  //TaskItem
+}
+
+###
