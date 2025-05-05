@@ -4,7 +4,38 @@ POST {{TaskManagementAPI_HostAddress}}/api/taskitems
 Content-Type: application/json
 
 {
-  //TaskItem
+  "title": "Write documentation",
+  "description": "Write API docs for task endpoint",
+  "status": "Unassigned",
+  "TaskDue": "2025-05-05T14:00:00"
 }
+
+
+###
+GET {{TaskManagementAPI_HostAddress}}/api/taskitems
+
+###
+
+PUT {{TaskManagementAPI_HostAddress}}/api/taskitems/201f3c23-5a73-412b-e815-08dd8bbcba58
+Content-Type: application/json
+
+{
+  "id": "201f3c23-5a73-412b-e815-08dd8bbcba58",
+  "title": "Updated Task",
+  "description": "Updated description",
+  "status": "Assigned",
+  "TaskDue": "2025-05-06T12:00:00Z"
+}
+
+
+
+
+###
+
+GET {{TaskManagementAPI_HostAddress}}/api/taskitems/201f3c23-5a73-412b-e815-08dd8bbcba58
+
+###
+
+DELETE {{TaskManagementAPI_HostAddress}}/api/taskitems/201f3c23-5a73-412b-e815-08dd8bbcba58
 
 ###
